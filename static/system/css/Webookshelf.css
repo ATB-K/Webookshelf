@@ -1,0 +1,229 @@
+/* 
+ * 共通設定
+ */
+
+/* 画面全体設定 */
+body {
+    margin: 0px;
+    padding: 0px;
+    text-align:center;
+    background-color: rgba(36, 40, 47);
+}
+
+/* 画像全体設定 */
+img {
+    box-shadow: 0 0 25px black;
+}
+
+/* リスト全体設定 */
+ul {
+    padding-right: 40px;
+    list-style-type: none;
+    display:grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+}
+
+/*
+ * 全体に影響する一意な設定
+ */
+#head {
+    width: 100%;
+    height: 120px;
+    display:block
+}
+
+#main_space {
+    width: 100%;
+    display:block
+}
+
+#msg_space {
+    width: 40%;
+    padding: 25px;
+    
+    text-align: center;
+    box-shadow: 0 0 10px black;
+    background-color: rgba(32, 42, 56);
+
+    /* 中央寄せ */
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.font {
+    font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+.font_icon {
+    font-size: 25px;
+    text-align: center;
+}
+
+.font_rotate {
+    transform: rotate(-90deg)
+}
+
+/*
+ * 表紙の設定
+ */
+.move_img {
+    width: 100%;
+}
+.move_img img {
+    width: 250px;
+    height: 400px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+.move_img img:hover {
+    transform: scale(1.05, 1.05);
+    cursor:pointer;
+}
+
+/* 題名の設定 */
+.title_name {
+    color: white;
+    text-shadow: 3px 3px 5px black;
+}
+
+/*
+ * ナビゲーションバー設定
+ */
+#gnav{
+    width: 100%;
+    z-index:9998;
+    position: fixed;
+    box-shadow:0px 20px 18px -15px black;
+    background-color: rgba(32, 42, 56);
+}
+
+/*
+ * ゴーストボタンの処理
+ */
+#gnav ul {
+    padding-right: 40px;
+    list-style-type: none;
+    display:grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+}
+
+/* プルダウンメニュー */
+#pulldown-menu ul {
+    display: list-item;
+}
+
+#pulldown-menu:hover .pulldown-list {
+    visibility: visible;
+    opacity: 1;
+}
+
+.pulldown-list {
+    padding-left: 0px;
+    width: 30%;
+    position: absolute;
+    visibility: hidden;
+}
+
+.pulldown-list li {
+    margin-top: 25px;
+    background-color: rgba(32, 42, 56);
+}
+
+/* ボタンの文字設定 */
+.ghost-btn li a {
+    border-radius: 5px;
+    border: 1px solid #fff;
+    color: #fff;
+    display: block;
+    font-size: 18px;
+    transition: 0.2s;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* ボタンの文字設定(ホバー時) */
+.ghost-btn li a:hover {
+    background-color: rgba(255, 255, 255, 0.450);
+    transform: scale(1.05, 1.05);
+    cursor: pointer;
+}
+
+#union_btn {
+    display: flex;
+    border-radius: 5px;
+    transition: 0.2s;
+    border: 1px solid #fff;
+}
+
+#union_btn a {
+    border-radius: 5px;
+    border: initial;
+    transform: initial;
+    width: 50%;
+}
+
+#union_btn:hover {
+    transform: scale(1.05, 1.05);
+    cursor: pointer;
+}
+
+/* スクロールスナップ */
+.scroll-area {
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    height: 92vh;
+}
+
+.scroll-item {
+    scroll-snap-align: start;
+    text-align: center;
+}
+
+/*
+ * ページロード時の処理
+ */
+#loading {
+    width: 100vw;
+    height: 100vh;
+    transition: all 0.8s;
+    background-color: rgb(43, 43, 43);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.loaded {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#page_top {
+    width: initial;
+    position: fixed;
+    right: 0px;
+    bottom: 45%;
+    display: block;
+    padding-right: 23px;
+}
+
+#page_top li {
+    width: 40px;
+    height: 40px;
+    padding-top: 30px;
+}
+
+#page_top a {
+    background-color: rgba(32, 42, 56);
+}
+
+#page_top a:hover {
+    background-color: rgba(255, 255, 255, 0.438);
+    transform: initial;
+}

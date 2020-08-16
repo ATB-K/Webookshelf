@@ -1,0 +1,8 @@
+{
+    "setting": {
+        "ip" : "127.0.0.1",
+        "port" : "5001",
+        "webbrowser path": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+        "image path": "/static/data/"
+    }
+}
