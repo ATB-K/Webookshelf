@@ -34,4 +34,4 @@ Icon made by Freepik from www.flaticon.com
 
 ## Author
 
-## [ATB](https://github.com/ATB-K)
+[ATB](https://github.com/ATB-K)
