@@ -7,13 +7,19 @@
 面倒な事は一切なしで、フォルダに画像突っ込めば本として認識します。<br>
 複数の本を纏めた本も作れるんで色々便利かも？
 
-### 主な機能
-- 本棚・書籍の動的生成
-- book.jsonにて表紙の設定が可能
-- 参照する階層をエクスプローラーで開く(Windowsのみ)
+## 主な機能
 
-## デモ (Demo)
-- TBD
+**動的な追加・削除が可能。**
+
+<img src="https://raw.githubusercontent.com/ATB-K/Webookshelf/doc/image/dynamic_create.gif" width="300" height="200">
+
+**フォルダで本をグループ分け可能。**
+
+<img src="https://raw.githubusercontent.com/ATB-K/Webookshelf/doc/image/dynamic_create2.gif" width="300" height="200">
+
+**book.jsonで表紙を指定可能。**
+
+<img src="https://raw.githubusercontent.com/ATB-K/Webookshelf/doc/image/title_change.gif" width="300" height="200">
 
 ## 依存関係 (Requirement)
 
